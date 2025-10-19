@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Blood Donation System — About</title>
+
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+
+    <!-- Project CSS (src/css/homec.css) -->
+    <link rel="stylesheet" href="../css/homec.css" />
+
+    <style>
+      /* page-level background using image from assets/images */
+      body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        position: relative;
+        overflow-y: auto;
+        background-color: #f5f5f5;
+      }
+
+      body::before {
+        content: "";
+        background: url("../../assets/images/receiver.png") no-repeat center
+          center fixed;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.25;
+        z-index: -1;
+      }
+
+      /* small safety: ensure the content area is readable over the background */
+      .content-card {
+        background-color: rgba(255, 255, 255, 0.9);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <!-- logo from assets/images -->
+        <img src="../../assets/images/logo.png" alt="Blood Bank Logo" />
+      </div>
+
+      <nav>
+        <ul>
+          <!-- these HTML files live in the same folder (src/html/) -->
+          <li><a href="../src/html/homelogin.html">Home</a></li>
+          <li><a href="../src/html/DonatorHome.html">Donate blood</a></li>
+          <li><a href="../src/html/about.html" class="active">About us</a></li>
+          <li><a href="../src/html/ReceiverHome.html">Request blood</a></li>
+          <li><a href="../src/html/homec.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div
+      class="container d-flex flex-column align-items-center my-4"
+      style="max-width: 900px">
+      <div
+        class="bg-light p-4 w-100 mb-4 content-card"
+        style="
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+        <h2
+          class="text-center mb-3"
+          style="background-color: #e0e0e0; padding: 10px; border-radius: 10px">
+          About us
+        </h2>
+
+        <div class="p-3" style="border-radius: 10px">
+          <p>
+            <strong>Welcome to our Smart Blood Donation System!</strong> Our
+            main goal is to transform the way blood donation works by using
+            technology to efficiently connect donors and recipients. Through our
+            platform we aim to create a smooth experience for both donors and
+            hospitals, ensuring life-saving blood reaches those in need quickly
+            and reliably.
+          </p>
+
+          <p>
+            By leveraging blood inventory data, real-time information, and
+            simple interfaces, we aim to build a community of dedicated donors
+            and make the process of saving lives easier and more accessible for
+            everyone.
+            <strong
+              >Join us in making a difference, one donation at a time!</strong
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid bg-dark text-white text-center py-3">
+      Email: darshannaik484@gmail.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;place:
+      @Tumkur&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Website: bloodlink.in
+    </footer>
+
+    <!-- Optional: your JS (src/js) -->
+    <!-- <script src="../js/main.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 100%;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 5px solid #d60000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px; /* Reduce padding */
+  height: 80px; /* Adjust height */
+}
+
+button:hover {
+  color: #547036;
+}
+
+li:hover {
+  color: #a5220a;
+}
+a {
+  color: darkslategray;
+}
+.form-control,
+.form-select {
+  box-shadow: 14px 15px 16px rgba(21, 7, 7, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  background-image: ;
+  height: 130px;
+  width: 130px;
+  margin-top: 19px;
+  margin-right: 10px;
+}
+.blood-groups {
+  display: flex;
+  width: 50%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+div.blood-groups {
+  border: 2px solid black;
+}
+.blood-groups img {
+  width: 40%;
+  margin-right: 5%;
+  border-radius: 5px;
+}
+
+.home1 img {
+  height: 250px;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 45px;
+  margin-top: 3%;
+  font-size: 20px;
+}
+.ways-to-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between columns */
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+  border: 5px #151111d1;
+}
+
+.ways-to-help h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.ways-to-help .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ways-to-help img {
+  opacity: 80%;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+  transition: transform 0.4s;
+}
+
+.ways-to-help img:hover {
+  animation-fill-mode: backwards;
+  width: 350px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transform: scale(1.1);
+}
+.ways-to-help p {
+  font-weight: bold;
+}
+.ways-to-help p:hover {
+  color: #b40000;
+  font-size: medium;
+  font-size: large;
+  font-weight: bolder;
+  transform: matrix3d(1, 1);
+}
+.option-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.card-option1 {
+  width: 120px;
+
+  padding: 20px;
+
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-option1 img {
+  width: 100px;
+  padding: 20px;
+  height: 100px;
+}
+.card-text {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav a {
+  text-decoration: none;
+  color: #131313;
+  font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+  color: #d60000;
+  font-weight: bolder;
+}
+
+.hero {
+  background-color: #ffecec;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.donate-section .highlight {
+  color: #d60000;
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+.donate-section p {
+  font-size: 1rem;
+  margin: 15px 0;
+}
+
+.donate-btn {
+  background-color: #d60000;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.donate-btn:hover {
+  background-color: #b40000;
+}
+
+/* .blood-groups {
+    display: flex;
+    align-items:end;
+    justify-content: space-between;
+    margin: 20px 0;
+} */
+
+.blood-groups h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.info {
+  background-color: #d60000;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+footer {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding: 15px;
+  background-color: #6d4444;
+  color: white;
+}

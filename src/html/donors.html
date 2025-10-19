@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Blood Donation System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/homec.css" />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      overflow-y: auto;
+    }
+
+    body::before {
+      content: "";
+      background: url("../assets/images/receiver.png") no-repeat center center
+        fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.25; /* Adjust the opacity here (0 to 1) */
+      z-index: -1;
+    }
+
+    background-image {
+      opacity: 20%;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.9);
+      width: 50%;
+      margin: 0 auto;
+    }
+  </style>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Blood Bank Logo" />
+        <!-- <h1>D Blood Bank</h1> -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../src/html/homelogin.html" class="active">Home</a></li>
+          <li>
+            <a
+              href="../src/html/DonatorHome.html"
+              onclick="alert('You chose to Donate Blood')"
+              >Donate blood</a
+            >
+          </li>
+          <li><a href="../src/html/AboutLogin.html">About us</a></li>
+          <li>
+            <a
+              href="../src/html/ReceiverHome.html"
+              onclick="alert('You chose to Request Blood')"
+              >Request blood</a
+            >
+          </li>
+          <li><a href="../src/html/homec.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container mt-4">
+      <h1 class="fw-bold">Welcome, Darshan</h1>
+      <div class="row mt-3">
+        <div class="col-auto">
+          <div class="text-center">
+            <p class="fw-bold">Blood type</p>
+            <h4 class="text-danger fw-bold">B+</h4>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="text-center">
+            <p class="fw-bold">All Donations</p>
+            <h4 class="text-danger fw-bold">10</h4>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="text-center">
+            <p class="fw-bold">2025 Donations</p>
+            <h4 class="text-danger fw-bold">0+</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container d-flex flex-column align-items-center my-4"
+      style="width: 60%">
+      <!-- Card 1 -->
+      <div class="card p-4 mb-4 shadow-sm w-100">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4 class="text-danger fw-bold">B+</h4>
+            <p class="mb-1 fw-bold">Darshan S</p>
+            <p class="mb-1">Tumkur</p>
+            <p class="mb-1">1 Unit</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar"></i> Posted on
+              <strong>21 Jan 2025</strong>
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn btn-outline-success">
+              <i class="bi bi-whatsapp"></i>
+            </button>
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-telephone"></i>
+            </button>
+            <button class="btn btn-danger">Donate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card p-4 mb-4 shadow-sm w-100">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4 class="text-danger fw-bold">A-</h4>
+            <p class="mb-1 fw-bold">Rahul K</p>
+            <p class="mb-1">Bangalore</p>
+            <p class="mb-1">2 Units</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar"></i> Posted on
+              <strong>18 Mar 2025</strong>
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn btn-outline-success">
+              <i class="bi bi-whatsapp"></i>
+            </button>
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-telephone"></i>
+            </button>
+            <button class="btn btn-danger">Donate</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card p-4 mb-4 shadow-sm w-100">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h4 class="text-danger fw-bold">O+</h4>
+            <p class="mb-1 fw-bold">Anjali P</p>
+            <p class="mb-1">Mysore</p>
+            <p class="mb-1">1 Unit</p>
+            <p class="text-muted">
+              <i class="bi bi-calendar"></i> Posted on
+              <strong>15 Feb 2025</strong>
+            </p>
+          </div>
+          <div class="d-flex align-items-center gap-3">
+            <button class="btn btn-outline-success">
+              <i class="bi bi-whatsapp"></i>
+            </button>
+            <button class="btn btn-outline-dark">
+              <i class="bi bi-telephone"></i>
+            </button>
+            <button class="btn btn-danger">Donate</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Email: darshannaik484@gmail.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      place: @Tumkur&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Website: bloodlink.in
+    </footer>
+  </body>
+</html>

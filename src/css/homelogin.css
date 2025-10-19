@@ -1,0 +1,48 @@
+ options { 
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+  }
+  .ReceiverImage
+  {
+    border: 3px;
+  }
+  .option {
+    position: relative;
+    border-radius: 16px;
+    width: 220px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .option:hover {
+    transform: translateY(-5px);
+    transform: translateX(5px,5px);
+    
+  }
+  img {
+    width: 100%;
+    border-radius: 16px;
+    opacity: 70%;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(167, 13, 13);
+    font-size: 24px;
+    font-weight: bold;
+     transition: transform 0.3s;
+}
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,0.5); */
+  
+  .text-overlay:hover{
+    color: rgb(212, 33, 33);
+    font-size: 25px;
+    transition: transform 0.3s;
+  }

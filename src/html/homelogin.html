@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Blood Donation System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="homec.css" />
+    <link rel="stylesheet" href="homelogin.css" />
+    <script>
+      function redirectToDonate() {
+        alert("You are redirecting to Donate Blood page...");
+        setTimeout(function () {
+          window.location.href = "DonatorHome.html";
+        }, 2000); // 2-second delay
+      }
+      function redirectToRequest() {
+        alert("You are redirecting to Reqest Blood page...");
+        setTimeout(function () {
+          window.location.href = "ReceiverHome.html";
+        }, 2000); // 2-second delay
+      }
+    </script>
+  </head>
+  <body style="background-color: rgb(212, 212, 231)">
+    <header style="background-color: rgb(212, 212, 231)">
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Blood Bank Logo" />
+        <!-- <h1>D Blood Bank</h1> -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../src/html/homec.html" class="active">Home</a></li>
+          <li>
+            <a
+              href="../src/html/DonatorHome.html"
+              onclick="alert('You are redirecting to Donate Blood page...')"
+              >Donate blood</a
+            >
+          </li>
+
+          <li><a href="../src/html/AboutLogin.html">About us</a></li>
+          <li>
+            <a
+              href="../src/html/ReceiverHome.html"
+              onclick="alert('You are redirecting to Request Blood page...')"
+              >Request blood</a
+            >
+          </li>
+          <li><a href="../src/html/homec.html">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2>Welcome to Smart Blood Donation System</h2>
+      <div class="home1">
+        <img src="../assets/images/home1.png" alt="Blood Bank Logo" />
+        <!-- <h1>D Blood Bank</h1> -->
+      </div>
+      <!-- <div class="donate-section"> 
+            <h3>Give the Gift of Life</h3>
+            <h1 class="highlight">Donate Blood Today!</h1>
+            <p>“Give the gift of life by donating blood. Your simple act can save a life and make a world of difference.”</p>
+            <button class="donate-btn "><a href="login.html">Donate Now!!</a></button>
+        </div>-->
+    </section>
+    <!-- <div class="blood-groups">
+        <div class="blood-groups-text">
+            <h2>Blood groups</h2>
+            <p>Blood group of any human being will mainly fall in any one of the following groups.</p>
+            <ul>
+                <li>A positive or A negative</li>
+                <li>B positive or B negative</li>
+                <li>O positive or O negative</li>
+                <li>AB positive or AB negative</li>
+            </ul>
+        </div>
+        <img src="home2.png" alt="Donate Blood">
+    </div>
+
+
+    </div> -->
+    <div class="options">
+      <h1 class="text-center p-4">Select the appropriate option</h1>
+      <div class="container">
+        <div class="option" style="border: 2px" onclick="redirectToDonate()">
+          <a href="../src/html/DonatorHome.html">
+            <img src="../assets/images/donatereceive.png" alt="Donate Blood" />
+            <div class="text-overlay">Donate Blood</div></a
+          >
+        </div>
+        <div class="option" onclick="redirectToRequest()">
+          <a href="../src/html/ReceiverHome.html"
+            ><img
+              src="../assets/images/donatereceive.png"
+              alt="Request Blood" />
+            <div class="text-overlay">Request Blood</div></a
+          >
+        </div>
+      </div>
+
+      <div class="row p-2 m-2">
+        <div class="col border dark">
+          <div class="blood-groups-text">
+            <h2>Blood groups</h2>
+            <p>
+              Blood group of any human being will mainly fall in any one of the
+              following groups.
+            </p>
+            <ul>
+              <li>A positive or A negative</li>
+              <li>B positive or B negative</li>
+              <li>O positive or O negative</li>
+              <li>AB positive or AB negative</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col img">
+          <img src="../assets/images/home2.png" alt="Donate Blood" />
+        </div>
+      </div>
+      <div class="row ways-to-help">
+        <h2>More ways you can make a difference</h2>
+        <div class="col">
+          <img src="../assets/images/bus.jpeg" alt="Host a blood drive" />
+          <p>Host a blood drive</p>
+        </div>
+        <div class="col">
+          <img src="../assets/images/donate.jpeg" alt="Become a volunteer" />
+          <p>Become a volunteer</p>
+        </div>
+        <div class="col">
+          <img
+            src="../assets/images/bus.jpeg"
+            alt="Make a financial donation" />
+          <p>Make a financial Donation</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      Email: darshannaik484@gmail.com&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+      place: @Tumkur&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Website: bloodlink.in
+    </footer>
+  </body>
+</html>
